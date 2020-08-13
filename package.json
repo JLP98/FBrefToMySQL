@@ -1,0 +1,16 @@
+{
+  "name": "fbrefscraper",
+  "version": "1.0.0",
+  "description": "Creates a CSV file of data from FBref on Premier League players",
+  "main": "scraoer2csv.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "JP",
+  "license": "ISC",
+  "dependencies": {
+    "dotenv": "^8.2.0",
+    "mysql": "^2.18.1",
+    "puppeteer": "^5.2.1"
+  }
+}
