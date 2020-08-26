@@ -4,13 +4,13 @@ const dataFolder = "/home/jp/Documents/Data/";
 (async () => {
     const browser = await puppeteer.launch();
     const page = await browser.newPage();
-    await getStats("shooting", page);
-    await getStats("passing", page);
-    await getStats("passing_types", page);
-    await getStats("gca", page);
-    await getStats("defense", page);
-    await getStats("possession", page);
-    await getStats("misc", page);
+    await getStats(process.env.SHOOTING_TABLE, page);
+    await getStats(process.env.PASSING_TABLE, page);
+    await getStats(process.env.PASSING_TYPES_TABLE, page);
+    await getStats(process.env.CREATIVE_ACTIONS_TABLE, page);
+    await getStats(process.env.DEFENCE_TABLE, page);
+    await getStats(process.env.POSSESSION_TABLE, page);
+    await getStats(process.env.MISCELLANEOUS_TABLE, page);
     await browser.close();
 })();
 
